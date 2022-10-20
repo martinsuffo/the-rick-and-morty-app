@@ -1,0 +1,27 @@
+<div class="card" *ngIf="data !== undefined" (click)="data.redirectUrl && click(data.redirectUrl)">
+    <div class="card-content">
+        <div class="card-image" [ngStyle]="{'background-image': 'url(\'' + data.imageUrl + '\')'}"></div>
+    
+        <div class="card-info" [ngClass]="{'card-info-title-only': !data.dataFields}">
+            <div class="card-info-title">
+                <span>
+                    {{data.title}}
+                </span>
+            </div>
+            
+            <ng-container *ngFor="let dataField of data.dataFields">
+                <div *ngIf="dataField.subtitle" class="card-info-subtitle">
+                    <span>
+                        {{dataField.subtitle}}
+                    </span>
+                </div>
+    
+                <div *ngIf="dataField.text" class="card-info-label">
+                    <span>
+                        {{dataField.text}}
+                    </span>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "title": "Personajes",
+            "imageUrl": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/09/Rick--Morty-Cast-and-Character-Guide-feature.jpg",
+            "redirectUrl": "/characters-home"
+        },
+        {
+            "title": "Lugares",
+            "imageUrl": "https://i.ytimg.com/vi/BSymgfwoAmI/maxresdefault.jpg",
+            "redirectUrl": "/locations-home"
+        }
+    ],
+    "todo": [
+        {
+            "title": "Episodios",
+            "imageUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/204bff69176011.5b7723cc19921.png",
+            "redirectUrl": "/episodes-home"
+        }
+    ]
+}

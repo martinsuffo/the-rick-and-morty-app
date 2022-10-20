@@ -1,0 +1,15 @@
+:host {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(14em, 20em));
+    justify-content: center;
+
+    width: 100%;
+}
+
+@media only screen and (max-width: 38em) {
+    :host {
+        grid-template-columns: 100%;
+        grid-gap: 1em;
+    }
+}

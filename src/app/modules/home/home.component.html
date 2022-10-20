@@ -1,0 +1,21 @@
+<div class="page-container">
+    <div class="home">
+        <div class="home-header">
+            <span>
+                Menú principal
+            </span>
+        </div>
+    
+        <div class="home-content">
+            <div class="home-content-header">
+                <span>
+                    Tabla de contenidos
+                </span>
+            </div>
+    
+            <div class="home-option-list">
+                <app-card-list [list]="options$ | async"></app-card-list>
+            </div>
+        </div>
+    </div>
+</div>

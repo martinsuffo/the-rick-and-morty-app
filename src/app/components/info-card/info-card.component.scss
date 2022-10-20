@@ -1,0 +1,92 @@
+a { 
+    color: inherit;
+    text-decoration: none;
+}
+
+.card {
+    background-color: white;
+    
+    display: block;
+
+    border: 2px solid rgb(98, 111, 255);
+    border-radius: 0.75em;
+    padding: 1em;
+
+    min-width: 10em;
+    height: calc(100% - 2em - 4px);
+
+    transition: background-color 0.075s;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-image {
+        // El background-image se setea en el template
+        background-position: center;
+        background-size: cover;
+
+        border-radius: 0.75em;
+
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    &-info {
+        padding-left: 1em;
+        overflow: hidden;
+
+        width: 100%;
+
+        &-title {
+            line-height: normal;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        &-title-only {
+            text-align: center;
+
+            align-self: center;
+
+            padding-top: 1em;
+
+            width: 100%;
+        }
+
+        &-subtitle {
+            font-weight: bold;
+        }
+    }
+
+    &:hover{
+        background-color: #56b0ff;
+    }
+}
+
+@media only screen and (max-width: 38em) {
+    .card {
+        height: fit-content;
+
+        min-width: 20em;
+
+        &-image {
+            height: 5em;
+            width: 5em;
+        }
+
+        &-content {
+            flex-direction: row;
+
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &-info-title-only {
+            padding-top: 0;
+        }
+    }
+}

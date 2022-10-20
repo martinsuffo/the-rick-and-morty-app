@@ -1,0 +1,6 @@
+{
+    "exportall.config.relExclusion": [
+        "/src/app/pages"
+    ],
+    "exportall.config.folderListener": []
+}
